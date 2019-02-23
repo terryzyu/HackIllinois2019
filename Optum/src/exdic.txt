@@ -1,0 +1,14 @@
+grip
+pressure
+walk
+drink
+five 
+two
+litter
+steps
+step
+one
+hundred
+twenty
+start
+end
