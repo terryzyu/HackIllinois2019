@@ -94,7 +94,6 @@ public class runner {
                         synthesizer.speakPlainText(temp, null);          
                         synthesizer.waitEngineState(Synthesizer.QUEUE_EMPTY); 
                         
-                        System.out.println(dtabase.get(parts[i]));
                     }
                 }
             }
