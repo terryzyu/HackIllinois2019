@@ -66,12 +66,9 @@ public class runner {
 		    //Get the recognized speech
 		    String command = result.getHypothesis();
 		    //Match recognized speech with our commands
-		    System.out.println(command);
 		    String[] parts = command.split(" ");
 		    if(parts[0].equalsIgnoreCase(key.get(0))) {
-			System.out.println(parts[0]);
 			for(int i = 2; i < key.size(); i++){
-			    System.out.println(parts[1]);
 			    if(parts[1].equalsIgnoreCase(key.get(1))){
 				break;
 			    }
