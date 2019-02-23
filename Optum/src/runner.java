@@ -78,7 +78,7 @@ public class runner {
                         String temp = "";
                         for(int j = 2; j < parts.length; j ++){
                             if(parts[j] != key.get(1)){
-                                temp += parts[j];
+                                temp += parts[j] + " ";
                             }
                             else{
                                 break;
@@ -98,5 +98,48 @@ public class runner {
         // Deallocate the Synthesizer. 
         synthesizer.deallocate();
 
+    }
+    
+    private int parseInt(String s){
+        String[] parts = s.split(" ");
+        int res = 0;
+        int temp;
+        if(parts[0] == "one"){
+            
+        }
+        else if(parts[0] == "two"){
+            
+        }
+        else if(parts[0] == "three"){
+            
+        }
+        else if(parts[0] == "four"){
+            
+        }
+        else if(parts[0] == "five"){
+            
+        }
+        else if(parts[0] == "six"){
+            
+        }
+        else if(parts[0] == "seven"){
+            
+        }
+        else if(parts[0] == "eight"){
+            
+        }
+        else if(parts[0] == "nine"){
+            
+        }
+        else if(parts[0] == "ten"){
+            
+        }
+        else if(parts[0] == "hundred"){
+            
+        }
+        else if(parts[0] == "thousand"){
+            
+        }
+        return res;
     }
 }
