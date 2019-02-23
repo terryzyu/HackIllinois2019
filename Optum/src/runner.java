@@ -11,20 +11,25 @@ import java.util.Map;
 import java.util.Iterator;
 import java.util.Set;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class runner {
+    
+    public static ArrayList<String> key = new ArrayList<String>();
 
     public static void main(String[] args) throws Exception {
         // set key word string
         File keyFile = new File("C:/Users/Kangbok Lee/Documents/NetBeansProjects/HackIllinois2019/Optum/src/test.txt");
         Scanner in = new Scanner(keyFile);
-        ArrayList<String> key = new ArrayList<String>();
         key.add("start");
         key.add("end");
         while(in.hasNext()){
             key.add(in.next());
         }
+        
         
         // data structure to store patient data
         HashMap<String, String> dtabase = new HashMap<String, String>();
@@ -51,95 +56,70 @@ public class runner {
         Configuration configuration = new Configuration();
         String path = "file:///C:/Users/Kangbok Lee/Desktop/";
         configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
-        configuration.setDictionaryPath(path + "9451.dic");
-        configuration.setLanguageModelPath(path + "9451.lm");
+        configuration.setDictionaryPath(path + "3509.dic");
+        configuration.setLanguageModelPath(path + "3509.lm");
 
         LiveSpeechRecognizer recognizer = new LiveSpeechRecognizer(configuration);
         // Start recognition process pruning previously cached data.
-        System.out.println("Just start");
         recognizer.startRecognition(true);
-        System.out.println("After");
+        synthesizer.speakPlainText("speak now", null);
+        synthesizer.waitEngineState(Synthesizer.QUEUE_EMPTY);
         SpeechResult result;  //Check if recognizer recognized the speech
         while ((result = recognizer.getResult()) != null) {
  
             //Get the recognized speech
             String command = result.getHypothesis();
             //Match recognized speech with our commands
-            System.out.println(command);
             String[] parts = command.split(" ");
+
             if(parts[0].equalsIgnoreCase(key.get(0))) {
-                System.out.println(parts[0]);
-                for(int i = 2; i < key.size(); i++){
-                    System.out.println(parts[1]);
+                for(int i = 1; i < parts.length; i++){
                     if(parts[1].equalsIgnoreCase(key.get(1))){
                         break;
                     }
-                    if(parts[1].equalsIgnoreCase(key.get(i))){
+                    if(key.contains(parts[i])){
                         String temp = "";
-                        for(int j = 2; j < parts.length; j ++){
-                            if(parts[j] != key.get(1)){
-                                temp += parts[j] + " ";
-                            }
-                            else{
-                                break;
+                        int j = i + 1;
+                        while(!key.contains(parts[j]) && j < parts.length && !parts[j].equalsIgnoreCase(key.get(1))){
+                            temp += parts[j] + " ";
+                            j++;
+                        }
+                        dtabase.put(parts[i], temp);
+                        if(j< parts.length){
+                            if(parts[j].equalsIgnoreCase(key.get(1))){
+                                i = j;
                             }
                         }
-                        dtabase.put(key.get(i), temp);
-                        
                         // speaks the given text until queue is empty. 
                         synthesizer.speakPlainText(temp, null);          
                         synthesizer.waitEngineState(Synthesizer.QUEUE_EMPTY); 
-                        break;
+                        
+                        System.out.println(dtabase.get(parts[i]));
                     }
                 }
             }
-
         }
         // Deallocate the Synthesizer. 
         synthesizer.deallocate();
-
     }
     
-    private int parseInt(String s){
-        String[] parts = s.split(" ");
-        int res = 0;
-        int temp;
-        if(parts[0] == "one"){
+    public static void addKey(String s) throws IOException{
+        if(!key.contains(s)){
+            key.add(s);
+            PrintWriter out = new PrintWriter(new FileWriter("C:/Users/Kangbok Lee/Documents/NetBeansProjects/HackIllinois2019/Optum/src/test.txt", true));
             
+            out.print(s + " ");
+            out.close();
         }
-        else if(parts[0] == "two"){
-            
+    }
+    
+    public static void deleteKey(String s) throws IOException{
+        key.remove(s);
+        PrintWriter out = new PrintWriter(new FileWriter("C:/Users/Kangbok Lee/Documents/NetBeansProjects/HackIllinois2019/Optum/src/test.txt", false));
+        
+        for(int i = 2; i < key.size(); i ++){
+            out.print(key.get(i)+ " ");
         }
-        else if(parts[0] == "three"){
-            
-        }
-        else if(parts[0] == "four"){
-            
-        }
-        else if(parts[0] == "five"){
-            
-        }
-        else if(parts[0] == "six"){
-            
-        }
-        else if(parts[0] == "seven"){
-            
-        }
-        else if(parts[0] == "eight"){
-            
-        }
-        else if(parts[0] == "nine"){
-            
-        }
-        else if(parts[0] == "ten"){
-            
-        }
-        else if(parts[0] == "hundred"){
-            
-        }
-        else if(parts[0] == "thousand"){
-            
-        }
-        return res;
+        out.close();
     }
 }

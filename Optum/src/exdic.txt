@@ -12,3 +12,5 @@ hundred
 twenty
 start
 end
+blood
+pressure
