@@ -15,6 +15,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class runner {
     
@@ -125,8 +126,8 @@ public class runner {
     public static double parseIntDouble(String input){
 		String result = "";
 		double out = 0;
-		String[] DIGITS = {"ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"};
-		String[] TENS = {null, "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY", "SEVENTY", "EIGHTY", "NINETY"};
+		String[] DIGITS = {"ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE",null};
+		String[] TENS = {null, "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY", "SEVENTY", "EIGHTY", "NINETY",null};
 		String[] TEENS = {"TEN", "ELEVEN", "TWELVE", "THIRTEEN", "FOURTEEN", "FIFTEEN", "SIXTEEN", "SEVENTEEN", "EIGHTEEN", "NINETEEN"};
 		String[] MAGNITUDES = {"HUNDRED", "THOUSAND", "MILLION", "POINT"};
 		String[] ZERO = {"ZERO", "OH"};
@@ -152,9 +153,9 @@ public class runner {
 							triplet[2] = k + 1;
 						}
 						
-						if(uno.equals(TENS[k])){
-							triplet[1] = k + 1;
-							triplet[2] = 0;
+						if(uno.equals(TEENS[k])){
+							triplet[1] = 1;
+							triplet[2] = k;
 						}
 					}
 				}
