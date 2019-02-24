@@ -1,4 +1,4 @@
-How are you feeling? Keyword: feeling
-Left Hand Grip Strength? Keyword: left
-Right Hand Grip Strength? Keyword: right
-How fatigue are you? Keyword: fatigue
+How are you feeling, 1 (bad) - 5 (good)? Keyword: feeling
+Left Hand Grip Strength (num)? Keyword: left
+Right Hand Grip Strength (num)? Keyword: right
+How fatigue are you, 1(little) - 5(lot)? Keyword: fatigue
