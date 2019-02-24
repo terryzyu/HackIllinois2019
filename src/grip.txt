@@ -1,4 +1,0 @@
-How are you feeling? Keyword: feeling
-Left Hand Grip Strength? Keyword: left
-Right Hand Grip Strength? Keyword: right
-How fatigue are you? Keyword: fatigue
