@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="border" prefHeight="258.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="optumFX.FXMLOptumController">
+   <children>
+      <Button layoutX="129.0" layoutY="86.0" mnemonicParsing="false" onAction="#add" prefHeight="42.0" prefWidth="82.0" text="Record" />
+      <Button layoutX="274.0" layoutY="220.0" mnemonicParsing="false" onAction="#addKey" text="Add key" />
+      <Label fx:id="status" layoutX="212.0" layoutY="153.0" />
+      <Button layoutX="243.0" layoutY="86.0" mnemonicParsing="false" onAction="#end" prefHeight="42.0" prefWidth="82.0" text="Stop" />
+      <Button layoutX="359.0" layoutY="220.0" mnemonicParsing="false" onAction="#deleteKey" text="Delete key" />
+   </children>
+</AnchorPane>
