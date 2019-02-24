@@ -1,0 +1,4 @@
+Do you feel any pain? Keywords: feel
+What actions cause the pain? Keywords: actions
+How severe is the pain? Keywords: severe
+How does the patient look? Keywords: patient look
