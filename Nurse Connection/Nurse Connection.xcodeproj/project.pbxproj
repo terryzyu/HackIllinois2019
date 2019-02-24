@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C0438532221EC42000E7514 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0438522221EC42000E7514 /* ViewController2.swift */; };
+		5C0438552221ECAB000E7514 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0438542221ECAB000E7514 /* ViewController3.swift */; };
+		5C04385722225149000E7514 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C04385622225149000E7514 /* SettingsView.swift */; };
+		5C153A112221BDED001AD2CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C153A102221BDED001AD2CF /* AppDelegate.swift */; };
+		5C153A132221BDED001AD2CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C153A122221BDED001AD2CF /* ViewController.swift */; };
+		5C153A162221BDED001AD2CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C153A142221BDED001AD2CF /* Main.storyboard */; };
+		5C153A182221BDEE001AD2CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C153A172221BDEE001AD2CF /* Assets.xcassets */; };
+		5C153A1B2221BDEE001AD2CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C153A192221BDEE001AD2CF /* LaunchScreen.storyboard */; };
+		5C153A262221BDEE001AD2CF /* Nurse_ConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C153A252221BDEE001AD2CF /* Nurse_ConnectionTests.swift */; };
+		5C153A312221BDEE001AD2CF /* Nurse_ConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C153A302221BDEE001AD2CF /* Nurse_ConnectionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C153A222221BDEE001AD2CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C153A052221BDED001AD2CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C153A0C2221BDED001AD2CF;
+			remoteInfo = "Nurse Connection";
+		};
+		5C153A2D2221BDEE001AD2CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C153A052221BDED001AD2CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C153A0C2221BDED001AD2CF;
+			remoteInfo = "Nurse Connection";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C0438522221EC42000E7514 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		5C0438542221ECAB000E7514 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		5C04385622225149000E7514 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5C153A0D2221BDED001AD2CF /* Nurse Connection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nurse Connection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C153A102221BDED001AD2CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C153A122221BDED001AD2CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C153A152221BDED001AD2CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C153A172221BDEE001AD2CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C153A1A2221BDEE001AD2CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C153A1C2221BDEE001AD2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C153A212221BDEE001AD2CF /* Nurse ConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nurse ConnectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C153A252221BDEE001AD2CF /* Nurse_ConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nurse_ConnectionTests.swift; sourceTree = "<group>"; };
+		5C153A272221BDEE001AD2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C153A2C2221BDEE001AD2CF /* Nurse ConnectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nurse ConnectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C153A302221BDEE001AD2CF /* Nurse_ConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nurse_ConnectionUITests.swift; sourceTree = "<group>"; };
+		5C153A322221BDEE001AD2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C153A0A2221BDED001AD2CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C153A1E2221BDEE001AD2CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C153A292221BDEE001AD2CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C153A042221BDED001AD2CF = {
+			isa = PBXGroup;
+			children = (
+				5C153A0F2221BDED001AD2CF /* Nurse Connection */,
+				5C153A242221BDEE001AD2CF /* Nurse ConnectionTests */,
+				5C153A2F2221BDEE001AD2CF /* Nurse ConnectionUITests */,
+				5C153A0E2221BDED001AD2CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C153A0E2221BDED001AD2CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C153A0D2221BDED001AD2CF /* Nurse Connection.app */,
+				5C153A212221BDEE001AD2CF /* Nurse ConnectionTests.xctest */,
+				5C153A2C2221BDEE001AD2CF /* Nurse ConnectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C153A0F2221BDED001AD2CF /* Nurse Connection */ = {
+			isa = PBXGroup;
+			children = (
+				5C153A102221BDED001AD2CF /* AppDelegate.swift */,
+				5C153A122221BDED001AD2CF /* ViewController.swift */,
+				5C153A142221BDED001AD2CF /* Main.storyboard */,
+				5C0438522221EC42000E7514 /* ViewController2.swift */,
+				5C0438542221ECAB000E7514 /* ViewController3.swift */,
+				5C04385622225149000E7514 /* SettingsView.swift */,
+				5C153A172221BDEE001AD2CF /* Assets.xcassets */,
+				5C153A192221BDEE001AD2CF /* LaunchScreen.storyboard */,
+				5C153A1C2221BDEE001AD2CF /* Info.plist */,
+			);
+			path = "Nurse Connection";
+			sourceTree = "<group>";
+		};
+		5C153A242221BDEE001AD2CF /* Nurse ConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C153A252221BDEE001AD2CF /* Nurse_ConnectionTests.swift */,
+				5C153A272221BDEE001AD2CF /* Info.plist */,
+			);
+			path = "Nurse ConnectionTests";
+			sourceTree = "<group>";
+		};
+		5C153A2F2221BDEE001AD2CF /* Nurse ConnectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C153A302221BDEE001AD2CF /* Nurse_ConnectionUITests.swift */,
+				5C153A322221BDEE001AD2CF /* Info.plist */,
+			);
+			path = "Nurse ConnectionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C153A0C2221BDED001AD2CF /* Nurse Connection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C153A352221BDEE001AD2CF /* Build configuration list for PBXNativeTarget "Nurse Connection" */;
+			buildPhases = (
+				5C153A092221BDED001AD2CF /* Sources */,
+				5C153A0A2221BDED001AD2CF /* Frameworks */,
+				5C153A0B2221BDED001AD2CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nurse Connection";
+			productName = "Nurse Connection";
+			productReference = 5C153A0D2221BDED001AD2CF /* Nurse Connection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C153A202221BDEE001AD2CF /* Nurse ConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C153A382221BDEE001AD2CF /* Build configuration list for PBXNativeTarget "Nurse ConnectionTests" */;
+			buildPhases = (
+				5C153A1D2221BDEE001AD2CF /* Sources */,
+				5C153A1E2221BDEE001AD2CF /* Frameworks */,
+				5C153A1F2221BDEE001AD2CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C153A232221BDEE001AD2CF /* PBXTargetDependency */,
+			);
+			name = "Nurse ConnectionTests";
+			productName = "Nurse ConnectionTests";
+			productReference = 5C153A212221BDEE001AD2CF /* Nurse ConnectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C153A2B2221BDEE001AD2CF /* Nurse ConnectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C153A3B2221BDEE001AD2CF /* Build configuration list for PBXNativeTarget "Nurse ConnectionUITests" */;
+			buildPhases = (
+				5C153A282221BDEE001AD2CF /* Sources */,
+				5C153A292221BDEE001AD2CF /* Frameworks */,
+				5C153A2A2221BDEE001AD2CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C153A2E2221BDEE001AD2CF /* PBXTargetDependency */,
+			);
+			name = "Nurse ConnectionUITests";
+			productName = "Nurse ConnectionUITests";
+			productReference = 5C153A2C2221BDEE001AD2CF /* Nurse ConnectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C153A052221BDED001AD2CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Hackillinois 2019";
+				TargetAttributes = {
+					5C153A0C2221BDED001AD2CF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5C153A202221BDEE001AD2CF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5C153A0C2221BDED001AD2CF;
+					};
+					5C153A2B2221BDEE001AD2CF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5C153A0C2221BDED001AD2CF;
+					};
+				};
+			};
+			buildConfigurationList = 5C153A082221BDED001AD2CF /* Build configuration list for PBXProject "Nurse Connection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C153A042221BDED001AD2CF;
+			productRefGroup = 5C153A0E2221BDED001AD2CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C153A0C2221BDED001AD2CF /* Nurse Connection */,
+				5C153A202221BDEE001AD2CF /* Nurse ConnectionTests */,
+				5C153A2B2221BDEE001AD2CF /* Nurse ConnectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C153A0B2221BDED001AD2CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C153A1B2221BDEE001AD2CF /* LaunchScreen.storyboard in Resources */,
+				5C153A182221BDEE001AD2CF /* Assets.xcassets in Resources */,
+				5C153A162221BDED001AD2CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C153A1F2221BDEE001AD2CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C153A2A2221BDEE001AD2CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C153A092221BDED001AD2CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C04385722225149000E7514 /* SettingsView.swift in Sources */,
+				5C153A132221BDED001AD2CF /* ViewController.swift in Sources */,
+				5C153A112221BDED001AD2CF /* AppDelegate.swift in Sources */,
+				5C0438552221ECAB000E7514 /* ViewController3.swift in Sources */,
+				5C0438532221EC42000E7514 /* ViewController2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C153A1D2221BDEE001AD2CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C153A262221BDEE001AD2CF /* Nurse_ConnectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C153A282221BDEE001AD2CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C153A312221BDEE001AD2CF /* Nurse_ConnectionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C153A232221BDEE001AD2CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C153A0C2221BDED001AD2CF /* Nurse Connection */;
+			targetProxy = 5C153A222221BDEE001AD2CF /* PBXContainerItemProxy */;
+		};
+		5C153A2E2221BDEE001AD2CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C153A0C2221BDED001AD2CF /* Nurse Connection */;
+			targetProxy = 5C153A2D2221BDEE001AD2CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C153A142221BDED001AD2CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C153A152221BDED001AD2CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C153A192221BDEE001AD2CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C153A1A2221BDEE001AD2CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C153A332221BDEE001AD2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C153A342221BDEE001AD2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C153A362221BDEE001AD2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "Nurse Connection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hack19.Nurse-Connection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C153A372221BDEE001AD2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "Nurse Connection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hack19.Nurse-Connection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C153A392221BDEE001AD2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "Nurse ConnectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hack19.Nurse-ConnectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nurse Connection.app/Nurse Connection";
+			};
+			name = Debug;
+		};
+		5C153A3A2221BDEE001AD2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "Nurse ConnectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hack19.Nurse-ConnectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nurse Connection.app/Nurse Connection";
+			};
+			name = Release;
+		};
+		5C153A3C2221BDEE001AD2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "Nurse ConnectionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hack19.Nurse-ConnectionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nurse Connection";
+			};
+			name = Debug;
+		};
+		5C153A3D2221BDEE001AD2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "Nurse ConnectionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Hack19.Nurse-ConnectionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nurse Connection";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C153A082221BDED001AD2CF /* Build configuration list for PBXProject "Nurse Connection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C153A332221BDEE001AD2CF /* Debug */,
+				5C153A342221BDEE001AD2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C153A352221BDEE001AD2CF /* Build configuration list for PBXNativeTarget "Nurse Connection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C153A362221BDEE001AD2CF /* Debug */,
+				5C153A372221BDEE001AD2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C153A382221BDEE001AD2CF /* Build configuration list for PBXNativeTarget "Nurse ConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C153A392221BDEE001AD2CF /* Debug */,
+				5C153A3A2221BDEE001AD2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C153A3B2221BDEE001AD2CF /* Build configuration list for PBXNativeTarget "Nurse ConnectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C153A3C2221BDEE001AD2CF /* Debug */,
+				5C153A3D2221BDEE001AD2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C153A052221BDED001AD2CF /* Project object */;
+}
