@@ -121,4 +121,155 @@ public class runner {
         }
         out.close();
     }
+    
+    public static double parseIntDouble(String input){
+		String result = "";
+		double out = 0;
+		String[] DIGITS = {"ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"};
+		String[] TENS = {null, "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY", "SEVENTY", "EIGHTY", "NINETY"};
+		String[] TEENS = {"TEN", "ELEVEN", "TWELVE", "THIRTEEN", "FOURTEEN", "FIFTEEN", "SIXTEEN", "SEVENTEEN", "EIGHTEEN", "NINETEEN"};
+		String[] MAGNITUDES = {"HUNDRED", "THOUSAND", "MILLION", "POINT"};
+		String[] ZERO = {"ZERO", "OH"};
+		
+		String[] decimal = input.split(MAGNITUDES[3]);//splits by "point" if theres a decimal
+		String[] millions = decimal[0].split(MAGNITUDES[2]);//splits by "million"
+
+		for(int i = 0; i < millions.length; i++){
+			String[] thousands = millions[i].split(MAGNITUDES[1]);
+
+			for(int j = 0; j < thousands.length; j++){
+				int[] triplet = {0, 0, 0};
+				StringTokenizer set = new StringTokenizer(thousands[j]);
+
+				if(set.countTokens() == 1){//one token in thousands
+					String uno = set.nextToken();
+					triplet[0] = 0;
+					
+					for(int k = 0; k < DIGITS.length; k++){
+						
+						if(uno.equals(DIGITS[k])){
+							triplet[1] = 0;
+							triplet[2] = k + 1;
+						}
+						
+						if(uno.equals(TENS[k])){
+							triplet[1] = k + 1;
+							triplet[2] = 0;
+						}
+					}
+				}
+
+
+				else if(set.countTokens() == 2){//two tokens in thousands
+				
+					String uno = set.nextToken();
+					String dos = set.nextToken();
+					
+					if(dos.equals(MAGNITUDES[0])){//if token is hundreds
+					
+						for(int k = 0; k < DIGITS.length; k++){
+							
+							if(uno.equals(DIGITS[k])){
+								triplet[0] = k + 1;
+								triplet[1] = 0;
+								triplet[2] = 0;
+							}
+						}
+					}
+					
+					else{
+						triplet[0] = 0;
+						
+						for(int k = 0; k < DIGITS.length; k++){
+							
+							if(uno.equals(TENS[k])){
+								triplet[1] = k + 1;
+							}
+							
+							if(dos.equals(DIGITS[k])){
+								triplet[2] = k + 1;
+							}
+						}
+					}
+				}
+
+				else if(set.countTokens() == 3){//three tokens in thousands
+					String uno = set.nextToken();
+					String dos = set.nextToken();
+					String tres = set.nextToken();
+					
+					for(int k = 0; k < DIGITS.length; k++){
+						
+						if(uno.equals(DIGITS[k])){
+							triplet[0] = k + 1;
+						}
+						
+						if(tres.equals(DIGITS[k])){
+							triplet[1] = 0;
+							triplet[2] = k + 1;
+						}
+						
+						if(tres.equals(TENS[k])){
+							triplet[1] = k + 1;
+							triplet[2] = 0;
+						}
+					}
+				}
+
+				else if(set.countTokens() == 4){//four tokens
+					String uno = set.nextToken();
+					String dos = set.nextToken();
+					String tres = set.nextToken();
+					String cuatro = set.nextToken();
+					
+					for(int k = 0; k < DIGITS.length; k++){
+						
+						if(uno.equals(DIGITS[k])){
+							triplet[0] = k + 1;
+						}
+						
+						if(cuatro.equals(DIGITS[k])){
+							triplet[2] = k + 1;
+						}
+						
+						if(tres.equals(TENS[k])){
+							triplet[1] = k + 1;
+						}
+					}
+				}
+				
+				else{
+					triplet[0] = 0;
+					triplet[1] = 0;
+					triplet[2] = 0;
+				}
+
+				result = result + Integer.toString(triplet[0]) + Integer.toString(triplet[1]) + Integer.toString(triplet[2]);
+			}
+			out = Integer.parseInt(result);
+		}
+
+		if(decimal.length > 1){  //The number is a decimal
+			StringTokenizer decimalDigits = new StringTokenizer(decimal[1]);
+			result = result + ".";
+			
+			while(decimalDigits.hasMoreTokens()){
+				String w = decimalDigits.nextToken();
+
+				if(w.equals(ZERO[0]) || w.equals(ZERO[1])){
+					result = result + "0";
+				}
+				
+				for(int j = 0; j < DIGITS.length; j++){
+					
+					if(w.equals(DIGITS[j])){
+						result = result + Integer.toString(j + 1);
+					}   
+				}
+
+			}
+			out = Double.parseDouble(result);
+		}
+		return out;
+	}
 }
